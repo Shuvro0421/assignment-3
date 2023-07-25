@@ -36,16 +36,16 @@
 
 <body>
   <header class="container mx-auto lg:px-40">
-    <div class="navbar md:bg-[#F85559] md:mt-10 rounded-full p-3 flex md:gap-0 gap-56">
-      <div class="md:order-first order-last flex-1 md:pl-0">
-        <div class="dropdown">
+    <div class="navbar md:bg-[#F85559] md:mt-10 rounded-full p-3 flex md:gap-0 "> 
+      <div class="md:order-first order-last flex-1 md:pl-0 md:relative pl-40  md:ml-0">
+        <div class="dropdown md:text-white">
           <label tabindex="0" class="btn btn-ghost btn-circle lg:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
               stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
             </svg>
           </label>
-          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box  ">
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box md:text-[#F85559] ">
             <li><a>Homepage</a></li>
             <li><a>About Us</a></li>
             <li><a>Shop</a></li>
@@ -61,24 +61,97 @@
           </ul>
         </div>
       </div>
-      <div class="md:navbar-center  order-first cursor-pointer normal-case pl-5 flex items-center justify-center gap-2 lg:mx-40 md:mr-10 lg:relative lg:right-20 ">
-      
+      <div
+        class="md:navbar-center  order-first cursor-pointer normal-case pl-5 flex items-center justify-center gap-2 lg:mx-40 md:mr-10 lg:relative lg:right-20 ">
+
         <img class="md:w-[30px] w-[20px]" src="./images/logo.png" alt="">
         <p class="md:text-white text-[#121212] w-[110px]  text-lg font-bold">Fruit Burst</p>
 
       </div>
       <!-- search bar -->
       <div class="md:navbar-end md:relative   md:inline-block hidden">
-        <input type="search" placeholder="Search here"  class="w-[300px] rounded-full mr-3 p-3 outline-none text-sm">
+        <input type="search" placeholder="Search here" class="w-[300px] rounded-full mr-3 p-3 outline-none text-sm">
         <button class="btn btn-ghost btn-circle absolute md:right-2">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 md:relative md:bottom-1 md:right-2" fill="none" viewBox="0 0 24 24" stroke="#121212"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 md:relative md:bottom-1 md:right-2" fill="none"
+            viewBox="0 0 24 24" stroke="#121212">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
         </button>
       </div>
     </div>
   </header>
-  
-  <main class="container mx-auto lg:px-40">
 
+  <main class="container mx-auto lg:px-40">
+    <!-- section 1 -->
+    <section class="my-24">
+      <div class="carousel  md:m-0 ml-5  md:pl-0  md:w-full w-[calc(100%-0)]">
+        <!-- card 1 -->
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="/images/banner1.png" class="w-full" />
+          <div class="absolute rounded-lg top-0 left-0 w-full h-full bg-gradient-to-b from-black to-gray-800 opacity-60"></div>
+
+          <div class="absolute flex flex-col items-center justify-center top-0 bottom-0 right-0 left-0 md:space-y-5">
+            <h1 class=" text-white md:text-6xl text-lg text-center font-extrabold">Exotic tastes at your <br> doorstep</h1>
+            <p class="text-white md:text-lg text-xs">We supply highly quality organic products</p>
+            <button class="md:btn normal-case text-white bg-[#F85559] md:rounded-lg rounded-sm px-5 border-none md:text-base md:p-4 text-xs p-2 mt-3 md:font-bold mb-2 md:px-8">Shop Now</button>
+          </div>
+          
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn md:btn-lg border-none bg-[#121212] text-white btn-circle btn-xs">❮</a> 
+            <a href="#slide2" class="btn md:btn-lg border-none bg-[#121212] text-white btn-circle btn-xs">❯</a>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="/images/banner2.png" class="w-full" />
+          <div class="absolute rounded-lg top-0 left-0 w-full h-full bg-gradient-to-b from-black to-gray-800 opacity-60"></div>
+
+          <div class="absolute flex flex-col items-center justify-center top-0 bottom-0 right-0 left-0 md:space-y-5">
+            <h1 class=" text-white md:text-6xl text-lg text-center font-extrabold">Exotic tastes at your <br> doorstep</h1>
+            <p class="text-white md:text-lg text-xs">We supply highly quality organic products</p>
+            <button class="md:btn normal-case text-white bg-[#F85559] md:rounded-lg rounded-sm px-5 border-none md:text-base md:p-4 text-xs p-2 mt-3 md:font-bold mb-2 md:px-8">Shop Now</button>
+          </div>
+          
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn md:btn-lg border-none bg-[#121212] text-white btn-circle btn-xs">❮</a> 
+            <a href="#slide3" class="btn md:btn-lg border-none bg-[#121212] text-white btn-circle btn-xs">❯</a>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="/images/banner3.png" class="w-full" />
+          <div class="absolute rounded-lg top-0 left-0 w-full h-full bg-gradient-to-b from-black to-gray-800 opacity-60"></div>
+
+          <div class="absolute flex flex-col items-center justify-center top-0 bottom-0 right-0 left-0 md:space-y-5">
+            <h1 class=" text-white md:text-6xl text-lg text-center font-extrabold">Exotic tastes at your <br> doorstep</h1>
+            <p class="text-white md:text-lg text-xs">We supply highly quality organic products</p>
+            <button class="md:btn normal-case text-white bg-[#F85559] md:rounded-lg rounded-sm px-5 border-none md:text-base md:p-4 text-xs p-2 mt-3 md:font-bold mb-2 md:px-8">Shop Now</button>
+          </div>
+          
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn md:btn-lg border-none bg-[#121212] text-white btn-circle btn-xs">❮</a> 
+            <a href="#slide4" class="btn md:btn-lg border-none bg-[#121212] text-white btn-circle btn-xs">❯</a>
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="/images/banner4.png" class="w-full" />
+          <div class="absolute rounded-lg top-0 left-0 w-full h-full bg-gradient-to-b from-black to-gray-800 opacity-60"></div>
+
+          <div class="absolute flex flex-col items-center justify-center top-0 bottom-0 right-0 left-0 md:space-y-5">
+            <h1 class=" text-white md:text-6xl text-lg text-center font-extrabold">Exotic tastes at your <br> doorstep</h1>
+            <p class="text-white md:text-lg text-xs">We supply highly quality organic products</p>
+            <button class="md:btn normal-case text-white bg-[#F85559] md:rounded-lg rounded-sm px-5 border-none md:text-base md:p-4 text-xs p-2 mt-3 md:font-bold mb-2 md:px-8">Shop Now</button>
+          </div>
+          
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn md:btn-lg border-none bg-[#121212] text-white btn-circle btn-xs">❮</a> 
+            <a href="#slide1" class="btn md:btn-lg border-none bg-[#121212] text-white btn-circle btn-xs">❯</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
 
