@@ -1,44 +1,88 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- lato -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/507ed1c05c.js" crossorigin="anonymous"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- lato -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/507ed1c05c.js" crossorigin="anonymous"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
           }
         }
-      </script>
-    <title>Fruit Brust</title>
-    <style>
-        *{
-            font-family: 'Lato', sans-serif;
-        }
-    </style>
+      }
+    }
+  </script>
+  <title>Fruit Brust</title>
+  <style>
+    * {
+      font-family: 'Lato', sans-serif;
+    }
+  </style>
 </head>
+
 <body>
-    <header>
-        <h1>hello</h1>
-    </header>
-    <main>
+  <header class="container mx-auto lg:px-40">
+    <div class="navbar md:bg-[#F85559] md:mt-10 rounded-full p-3 flex md:gap-0 gap-56">
+      <div class="md:order-first order-last flex-1 md:pl-0">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost btn-circle lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+            </svg>
+          </label>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box  ">
+            <li><a>Homepage</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+        <div class="hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-white">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="md:navbar-center  order-first cursor-pointer normal-case pl-5 flex items-center justify-center gap-2 lg:mx-40 md:mr-10 lg:relative lg:right-20 ">
+      
+        <img class="md:w-[30px] w-[20px]" src="./images/logo.png" alt="">
+        <p class="md:text-white text-[#121212] w-[110px]  text-lg font-bold">Fruit Burst</p>
 
-    </main>
-    <footer>
+      </div>
+      <!-- search bar -->
+      <div class="md:navbar-end md:relative   md:inline-block hidden">
+        <input type="search" placeholder="Search here"  class="w-[300px] rounded-full mr-3 p-3 outline-none text-sm">
+        <button class="btn btn-ghost btn-circle absolute md:right-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 md:relative md:bottom-1 md:right-2" fill="none" viewBox="0 0 24 24" stroke="#121212"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  
+  <main class="container mx-auto lg:px-40">
 
-    </footer>
+  </main>
+  <footer>
+
+  </footer>
 </body>
+
 </html>
